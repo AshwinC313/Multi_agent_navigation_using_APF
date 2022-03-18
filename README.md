@@ -12,3 +12,17 @@ This project aims to simulate the behaviour of multi-robot system and understand
 
 ###   File structure
 ![rqt_graph](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_gragh1.png)
+
+* All the controller scripts are stored in ```multi_agent_sim/src```.
+* ```controller_robot1.py``` is used to control ```robot1/``` and has a node name of _speed_controller1_.
+* ```controller_robot2.py``` is used to control ```robot2/``` and has a node name of _speed_controller2_.
+* ```controller_robot3.py``` is used to control ```robot3/``` and has a node name of _speed_controller3_.
+* ```controller_robot4.py``` is used to control ```robot4/``` and has a node name of _speed_controller4_.
+* ```controller_robot1.py``` subscribes the topic ```robot1/odom``` and publishes the topic ```robot1/cmd_vel```.
+* ```controller_robot1.py``` subscribes the topic ```robot2/odom``` and publishes the topic ```robot2/cmd_vel```.
+* ```controller_robot1.py``` subscribes the topic ```robot3/odom``` and publishes the topic ```robot3/cmd_vel```.
+* ```controller_robot1.py``` subscribes the topic ```robot4/odom``` and publishes the topic ```robot4/cmd_vel```.
+* A launchfile ```multi_agent_sim/launch/nodes.launch``` is created to launch all these nodes so that all the robots move together.
+
+### Code functionality
+
