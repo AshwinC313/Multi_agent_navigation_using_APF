@@ -25,4 +25,6 @@ This project aims to simulate the behaviour of multi-robot system and understand
 * A launchfile ```multi_agent_sim/launch/nodes.launch``` is created to launch all these nodes so that all the robots move together.
 
 ### Code functionality
+The script is provided with the goal coordinates and the agent moves towards the goal by calculating the error in the orientation and the distance between the goal and initial position.
+
 
