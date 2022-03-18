@@ -27,4 +27,8 @@ This project aims to simulate the behaviour of multi-robot system and understand
 ### Code functionality
 The script is provided with the goal coordinates and the agent moves towards the goal by calculating the error in the orientation and the distance between the goal and initial position.
 
+####  Fig. 1 Initial orientation of the system
+![initial_orientation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/initial_orientation.png)
+
+
 
