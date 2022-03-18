@@ -7,3 +7,6 @@ This repository contains the necessary setup, launch files and controller codes 
 
 ## 2) Project Description
 This project aims to simulate the behaviour of multi-robot system and understand the collective motion of the agents for path planning and obstacle avoidance. In this project, a system of 4 turtlebots are there in the gazebo workspace which is defined in the ``` multi_agent_sim/launch/main.launch ``` and accordingly the topics of the robots are defined as ```robot1/```, ```robot2/```, ```robot3/``` and  ```robot4/```.
+
+### File structure
+![rqt_graph](file:///home/ashwin/Desktop/rqt_gragh1.png)
