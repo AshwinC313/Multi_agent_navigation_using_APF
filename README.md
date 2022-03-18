@@ -1,5 +1,6 @@
 # Design Project ME F376
-This repository contains the necessary setup, launch files and controller codes for the multi-agent-simulation using turtlebots in ROS for the design project ME F376
+This repository contains the necessary setup, launch files and controller codes for the multi-agent-simulation using turtlebots in ROS for the design project ME F376.
+
 ![cover_image](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/dop_ss1.png)
 
 ## 1) Running the launch files
