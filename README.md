@@ -31,7 +31,7 @@ The script is provided with the goal coordinates and the agent moves towards the
 ![initial_orientation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/initial_orientation.png)
 
 #### Fig. 2 Video of how the robots are moving
-![video_simulation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/vid2.mp4)
+![video_simulation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/simulation.gif.gif)
 
 
 
