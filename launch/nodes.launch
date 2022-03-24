@@ -1,0 +1,7 @@
+<launch>
+    <node name="speed_controller1" pkg="multi_agent_sim" type="controller_robot1.py"/>
+    <node name="speed_controller2" pkg="multi_agent_sim" type="controller_robot2.py"/>
+    <node name="speed_controller3" pkg="multi_agent_sim" type="controller_robot3.py"/>
+    <node name="speed_controller4" pkg="multi_agent_sim" type="controller_robot4.py"/>
+    <node name="position_plotter1" pkg="multi_agent_sim" type="pose_plotter.py"/>
+</launch>
