@@ -19,7 +19,11 @@ There are 4 different simulations in this repository. formation control of n age
 * Open another terminal and the run the command ```rosrun multi_agent_sim formation_control_6agents.py``` to run the python code which contains the control algorithm of the formation control of 6 agents.
 
 ## 2) Project Description
-This project aims to simulate the behaviour of multi-robot system and understand the collective motion of the agents for path planning and obstacle avoidance. In this project, a system of 4 turtlebots are there in the gazebo workspace which is defined in the ``` multi_agent_sim/launch/main.launch ``` and accordingly the topics of the robots are defined as ```robot1/```, ```robot2/```, ```robot3/``` and  ```robot4/```.
+This project aims to simulate the behaviour of multi-robot system and understand the collective motion of the agents for path planning and obstacle avoidance. In this project, a system of n turtlebots (n = 2, 4, 6) are there in the gazebo workspace.
+* For n = 2, we have to use a launch file of ```multi_agent_sim/main_2.launch``` which have robots defined as ```/robot1``` and ```/robot2```.
+* For n = 4, we have to use a launch file of ```multi_agent_sim/main.launch``` which have robots defined as ```/robot1``` , ```/robot2```, ```/robot3``` and ```/robot4```.
+* For n = 4, we have to use a launch file of ```multi_agent_sim/6_agent_main.launch``` which have robots defined as ```/robot1``` , ```/robot2```, ```/robot3``` ,```/robot4```, ```/robot5``` and ```/robot6```.
+
 
 ###   File structure
 ![rqt_graph](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_gragh1.png)
