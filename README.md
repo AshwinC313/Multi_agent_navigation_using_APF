@@ -4,8 +4,19 @@ This repository contains the necessary setup, launch files and controller codes 
 ![cover_image](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/dop_ss1.png)
 
 ## 1) Running the launch files
-* In the terminal run the command ``` roslaunch multi_agent_sim main.launch ``` to launch the gazebo workspace containing the turtlebots.
-* Open another terminal and run the command ``` roslaunch multi_agent_sim nodes.launch ``` to launch the controller scripts for the navigation of the turtlebots.
+There are 4 different simulations in this repository. formation control of n agents (where n = 2,4 and 6). The following steps will help in running all the launch files so that each of the simulations could be seen.
+
+### 1.1) For launching 2 agents in the workspace
+* In the terminal run the command ```roslaunch multi_agent_sim main_2.launch``` to launch the gazebo workspace containing the 2 agents.
+* Open another terminal and the run the command ```rosrun multi_agent_sim formation_control_2agents.py``` to run the python code which contains the control algorithm of the formation control of 2 agents.
+
+### 1.2) For launching 4 agents in the workspace
+* In the terminal run the command ```roslaunch multi_agent_sim main.launch``` to launch the gazebo workspace containing the 4 agents.
+* Open another terminal and the run the command ```rosrun multi_agent_sim formation_control_4agents.py``` to run the python code which contains the control algorithm of the formation control of 4 agents.
+
+### 1.3) For launching 6 agents in the workspace
+* In the terminal run the command ```roslaunch multi_agent_sim 6_agent_main.launch``` to launch the gazebo workspace containing the 6 agents.
+* Open another terminal and the run the command ```rosrun multi_agent_sim formation_control_6agents.py``` to run the python code which contains the control algorithm of the formation control of 6 agents.
 
 ## 2) Project Description
 This project aims to simulate the behaviour of multi-robot system and understand the collective motion of the agents for path planning and obstacle avoidance. In this project, a system of 4 turtlebots are there in the gazebo workspace which is defined in the ``` multi_agent_sim/launch/main.launch ``` and accordingly the topics of the robots are defined as ```robot1/```, ```robot2/```, ```robot3/``` and  ```robot4/```.
