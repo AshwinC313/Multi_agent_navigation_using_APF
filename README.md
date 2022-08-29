@@ -22,7 +22,7 @@ There are 4 different simulations in this repository. formation control of n age
 This project aims to simulate the behaviour of multi-robot system and understand the collective motion of the agents for path planning and obstacle avoidance. In this project, a system of n turtlebots (n = 2, 4, 6) are there in the gazebo workspace.
 * For n = 2, we have to use a launch file of ```multi_agent_sim/main_2.launch``` which have robots defined as ```/robot1``` and ```/robot2```.
 * For n = 4, we have to use a launch file of ```multi_agent_sim/main.launch``` which have robots defined as ```/robot1``` , ```/robot2```, ```/robot3``` and ```/robot4```.
-* For n = 4, we have to use a launch file of ```multi_agent_sim/6_agent_main.launch``` which have robots defined as ```/robot1``` , ```/robot2```, ```/robot3``` ,```/robot4```, ```/robot5``` and ```/robot6```.
+* For n = 6, we have to use a launch file of ```multi_agent_sim/6_agent_main.launch``` which have robots defined as ```/robot1``` , ```/robot2```, ```/robot3``` ,```/robot4```, ```/robot5``` and ```/robot6```.
 
 
 ###   File structure
@@ -37,24 +37,27 @@ This project aims to simulate the behaviour of multi-robot system and understand
 ![rqt_graph_6_agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_graph_for_6agents.png)
 
 * All the controller scripts are stored in ```multi_agent_sim/src```.
-* ```controller_robot1.py``` is used to control ```robot1/``` and has a node name of _speed_controller1_.
-* ```controller_robot2.py``` is used to control ```robot2/``` and has a node name of _speed_controller2_.
-* ```controller_robot3.py``` is used to control ```robot3/``` and has a node name of _speed_controller3_.
-* ```controller_robot4.py``` is used to control ```robot4/``` and has a node name of _speed_controller4_.
-* ```controller_robot1.py``` subscribes the topic ```robot1/odom``` and publishes the topic ```robot1/cmd_vel```.
-* ```controller_robot1.py``` subscribes the topic ```robot2/odom``` and publishes the topic ```robot2/cmd_vel```.
-* ```controller_robot1.py``` subscribes the topic ```robot3/odom``` and publishes the topic ```robot3/cmd_vel```.
-* ```controller_robot1.py``` subscribes the topic ```robot4/odom``` and publishes the topic ```robot4/cmd_vel```.
+ 
+* ```formation_control_2agents.py``` is used to control 2 agents and has a node name of _formation_control_for_2agents_.
+* ```formation_control_4agents.py``` is used to control 4 agents and has a node name of _formation_control_for_4agents_.
+* ```formation_control_6agents.py``` is used to control 6 agents and has a node name of _formation_control_for_6agents_.
+
 * A launchfile ```multi_agent_sim/launch/nodes.launch``` is created to launch all these nodes so that all the robots move together.
 
 ### Code functionality
 The script is provided with the goal coordinates and the agent moves towards the goal by calculating the error in the orientation and the distance between the goal and initial position.
 
-####  Fig. 1 Initial orientation of the system
+####  Fig. 1 Initial orientation of the system (for n = 4)
 ![initial_orientation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/initial_orientation.png)
 
-#### Fig. 2 Video of how the robots are moving
-![video_simulation](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/simulation.gif.gif)
+#### Fig. 2 formation control simulation for n = 2
+![video_simulation_2agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/formation_control_n%3D2.gif)
+
+#### Fig. 3 formation control simulation for n = 4
+![video_simulation_4agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/formation_control_n%3D4.gif)
+
+#### Fig. 4 formation control simulation for n = 6
+![video_simulation_6agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/formation_control_n%3D6.gif)
 
 
 
