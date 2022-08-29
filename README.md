@@ -26,7 +26,15 @@ This project aims to simulate the behaviour of multi-robot system and understand
 
 
 ###   File structure
-![rqt_graph](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_gragh1.png)
+
+#### RQT Graph of 2 agents
+![rqt_graph_2_agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_graph_for_2agents.png)
+
+#### RQT Graph of 4 agents
+![rqt_graph_4_agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_graph_for_4agents.png)
+
+#### RQT Graph of 6 agents
+![rqt_graph_6_agents](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/rqt_graph_for_6agents.png)
 
 * All the controller scripts are stored in ```multi_agent_sim/src```.
 * ```controller_robot1.py``` is used to control ```robot1/``` and has a node name of _speed_controller1_.
