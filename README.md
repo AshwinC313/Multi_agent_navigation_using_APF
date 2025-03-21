@@ -1,5 +1,5 @@
-# Design Project ME F376
-This repository contains the necessary setup, launch files and controller codes for the multi-agent-simulation using turtlebots in ROS for the design project ME F376.
+# Multi-agent navigation suing Artificial Potential Functions
+This repository contains the necessary setup, launch files and controller codes for the multi-agent-simulation using turtlebots in ROS for the research project.
 
 ![cover_image](https://github.com/AshwinC313/Design_Project_MEF376/blob/main/dop_ss1.png)
 
